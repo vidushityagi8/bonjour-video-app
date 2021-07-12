@@ -5,7 +5,7 @@ const videoGrid = document.getElementById("video-grid");
 const peer = new Peer(undefined, {
   path: "/peerjs",
   host: "/",
-  port: "3000",
+  port: "443",
 });
 
 let participants = [];
@@ -38,7 +38,7 @@ navigator.mediaDevices
     // console.log("my video stream")
     // console.log(myVideoStream)
 
-    addVideoStream(myVideo, stream, myDetails.id);
+    // addVideoStream(myVideo, stream, myDetails.id);
     addNameTag(myDetails.id);
 
     socket.on("user-connected", (userId) => {
@@ -83,6 +83,7 @@ peer.on("open", (id) => {
   myDetails.userName = userName;
   // participants.push(myDetails)
   addParticipant(myDetails, true);
+  addVideoStream(myVideo, myVideoStream, myDetails.id);
   console.log(`My userId: ${id}`);
   console.log(myDetails);
   socket.emit("join-room", ROOM_ID, id);
@@ -284,11 +285,17 @@ const addNameTagIcon = (userId, iconClass) => {
   let icon = document.createElement("i");
   icon.className = `name-tag-icon fas ${iconClass}`;
   name_tag.append(icon);
+  if (typeof name_tag !== "undefined") {
+    name_tag.append(icon);
+  }
 };
 
 const removeNameTagIcon = (userId, iconClass) => {
   let name_tag = document.getElementsByClassName(userId)[0];
   if (name_tag) {
+    name_tag.getElementsByClassName(iconClass)[0].remove();
+  }
+  if (typeof name_tag !== "undefined") {
     name_tag.getElementsByClassName(iconClass)[0].remove();
   }
 };
