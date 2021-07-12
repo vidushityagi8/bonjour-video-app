@@ -189,6 +189,8 @@ function addVideoStream(video, stream, id) {
 
 function addNameTag(id) {
   console.log("------DEBUG-----------");
+  console.log(`id=${id}`);
+  console.log(`myid=${myDetails.id}`);
   let name_element = document.getElementsByClassName(id)[0];
   console.log(name_element);
   for (let i = 0; i < participants.length; i++) {
@@ -292,9 +294,7 @@ const addNameTagIcon = (userId, iconClass) => {
 
 const removeNameTagIcon = (userId, iconClass) => {
   let name_tag = document.getElementsByClassName(userId)[0];
-  if (name_tag) {
-    name_tag.getElementsByClassName(iconClass)[0].remove();
-  }
+
   if (typeof name_tag !== "undefined") {
     name_tag.getElementsByClassName(iconClass)[0].remove();
   }
