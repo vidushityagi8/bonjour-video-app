@@ -1,0 +1,41 @@
+.video-controls-buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.bottom-btn {
+  background-color: #3c4043;
+  color: #fff;
+  border: 1px solid #3c4043;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.bottom-btn :hover {
+  cursor: pointer;
+  text-shadow: 0 0 10px #ddd;
+}
+
+.mute,
+.stop,
+.leave {
+  color: #be3144;
+}
+
+.end:hover {
+  text-shadow: 0 0 10px #da0037;
+}
+
+.raised {
+  color: #eba83a;
+}

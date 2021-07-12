@@ -1,0 +1,21 @@
+/* --------------- VIDEO SECTION --------------- */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.header img {
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+}
+
+.room-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}

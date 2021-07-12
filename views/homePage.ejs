@@ -1,0 +1,75 @@
+<%- include("partials/header") %>
+<link rel="stylesheet" href="css/homePage.css" />
+        <!-- HEADING -->
+        <!-- <div class="container"> -->
+
+        <div class="heading-container row">
+          <div class="heading col-6">
+            <h1>Remote Connection with your team</h1>
+            <h2>
+              Work together in ways that go beyond with easy video from anywhere
+            </h2>
+            <hr />
+
+            <form name="room-input" action="/" method="POST">
+              <div
+                id="username-input"
+                class="input-section"
+                style="display: block"
+              >
+                <label for="user-name"></label>
+                <input
+                  name="userName"
+                  type="text"
+                  class="form-control"
+                  id="user-name"
+                  placeholder="Join as(username)"
+                  autocomplete="off"
+                />
+                <button
+                  type="button"
+                  class="username-submit btn btn-lg custom-btn"
+                  onClick="toggle_visibility('username-input');
+                  toggle_visibility('join-room-input');"
+                >
+                  Submit
+                </button>
+              </div>
+              <div
+                id="join-room-input"
+                class="input-section"
+                style="display: none"
+              >
+                <button
+                  type="submit"
+                  class="btn btn-lg custom-btn"
+                  href="/<%=roomId%>"
+                >
+                  Create New Room
+                </button>
+
+                <input
+                  class="join-input"
+                  type="text"
+                  placeholder="Type RoomID..."
+                  name="roomId"
+                  autocomplete="off"
+                />
+                <input
+                  class="btn join-input custom-btn"
+                  type="submit"
+                  value="Join"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="col-6">
+            <img src="images/video-call-ss.jpeg" alt="people" />
+          </div>
+        </div>
+       <!-- </div> -->
+      </div>
+    </section>
+  </body>
+</html>

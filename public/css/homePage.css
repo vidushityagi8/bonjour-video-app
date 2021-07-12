@@ -1,0 +1,121 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.vl {
+  position: relative;
+  top: 3.5px;
+  border-left: 6px solid #11999e;
+  height: 3rem;
+  display: inline-block;
+}
+
+.navbar {
+  background-color: #66bfbf;
+}
+
+.navbar-brand h3 {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  padding: 20px;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #2f5d62;
+}
+
+.navbar-brand h3:hover {
+  color: #11999e;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #2f5d62;
+}
+
+.nav-link:hover {
+  color: #343a40;
+}
+
+.heading {
+  align-self: center;
+}
+
+.heading h1 {
+  display: block;
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  padding: 2%;
+  color: #2f5d62;
+}
+
+.heading h2 {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 2%;
+  color: #2f5d62;
+  font-weight: normal;
+}
+
+.heading-container {
+  padding: 7% 4%;
+  background-color: #aad8d3;
+}
+
+.heading-container img {
+  width: 500px;
+  height: 400px;
+  border-radius: 2%;
+  margin-left: 130px;
+}
+
+#user-name {
+  text-align: left;
+  width: 50%;
+  height: 45px;
+  display: inline-block;
+  margin: 50px 20px 50px 5px;
+}
+
+.username-submit {
+  position: relative;
+  bottom: 2px;
+  height: 45px;
+}
+
+#join-room-input {
+  text-align: left;
+  width: 50%;
+  height: 45px;
+  display: inline-block;
+  margin: 50px 20px 50px 5px;
+  padding: 16px 0 45px 0;
+}
+
+.join-input {
+  position: relative;
+  left: 250px;
+  bottom: 47px;
+  height: 46px;
+}
+
+.custom-btn {
+  background: linear-gradient(to bottom, #11999e 5%, #11999e 100%);
+  background-color: #11999e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}

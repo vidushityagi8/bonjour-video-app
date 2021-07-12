@@ -1,0 +1,73 @@
+/* --------------- CHAT SECTION --------------- */
+
+.chat-section {
+  background-color: #2c2f33;
+}
+
+.chat-section {
+  display: none;
+}
+
+.chat-window {
+  width: inherit;
+  overflow-y: auto;
+  height: fit-content;
+}
+
+.chat-header {
+  color: #f5f5f5;
+  text-align: center;
+  padding: 10%;
+}
+
+.chat-header h6 {
+  font-size: 2rem;
+}
+
+.chat-name-icon {
+  color: darkgrey;
+  font-size: 1.5rem;
+  margin-top: 3px;
+  padding: 0;
+  padding-left: 5% !important;
+}
+
+.message-input {
+  position: absolute;
+  bottom: 5%;
+  width: 92%;
+  text-align: center;
+}
+
+.message-input input {
+  width: auto;
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  width: inherit;
+  padding: 0% 3%;
+  font-size: large;
+}
+
+.message-input input:focus {
+  outline: none;
+}
+
+.messages p {
+  color: #f5f5f5;
+}
+
+.time {
+  color: dimgray !important;
+}
+
+.my-message .message,
+.my-message .userName {
+  text-align: end;
+}
+
+.new-user-joined {
+  color: dimgray !important;
+  text-align: center;
+  padding: 20px;
+}
