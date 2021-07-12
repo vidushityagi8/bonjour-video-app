@@ -39,7 +39,7 @@ navigator.mediaDevices
     // console.log(myVideoStream)
 
     // addVideoStream(myVideo, stream, myDetails.id);
-    addNameTag(myDetails.id);
+    // addNameTag(myDetails.id);
 
     socket.on("user-connected", (userId) => {
       // console.log(`new user connected ${userId}`)
@@ -111,6 +111,7 @@ function connectToNewUser(userId, stream) {
       addParticipant(data);
       // console.log(participants)
       newUserJoinedRoom(data);
+      addNameTag(data.id);
     });
     conn.send(myDetails);
   });
@@ -154,17 +155,6 @@ function addVideoStream(video, stream, id) {
   console.log(`adding: ${id} STREAM`);
   console.log("displaying all participants");
   console.log(participants);
-
-  // let obj;
-  // console.log("in loop")
-  // for(let i=0; i<participants.length; i++) {
-  //   console.log(participants[i])
-  //   if(participants[i].id == id) {
-  //     obj = participants[i]
-  //   }
-  // }
-  // console.log(obj)
-
   video.srcObject = stream;
   video.addEventListener("loadedmetadata", () => {
     video.play();
@@ -184,6 +174,9 @@ function addVideoStream(video, stream, id) {
   div.append(video__overlay);
 
   videoGrid.append(div);
+  if (id == myDetails.id) {
+    addNameTag(myDetails.id);
+  }
   Dish();
 }
 

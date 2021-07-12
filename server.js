@@ -51,6 +51,10 @@ app.get("/about", (req, res) => {
   res.render("aboutPage");
 });
 
+app.get("/meet-left", (req, res) => {
+  res.render("leavePage");
+});
+
 // ----------- socket io connection -------------
 io.on("connection", (socket) => {
   socket.on("join-room", (roomId, userId) => {
