@@ -126,4 +126,9 @@ body {
   text-decoration: none;
 }
 
-/* --------Footer--------- */
+/* --------Video Demo--------- */
+.video-demo {
+  padding: 5%;
+  margin: auto;
+  text-align: center;
+}
