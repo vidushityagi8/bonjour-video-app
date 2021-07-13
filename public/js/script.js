@@ -277,7 +277,7 @@ const setPlayButton = () => {
 const addNameTagIcon = (userId, iconClass) => {
   let name_tag = document.getElementsByClassName(userId)[0];
   if (userId == myDetails.id) {
-    let videooverlay = document.getElementsByClassName("videooverlay")[0];
+    let video__overlay = document.getElementsByClassName("video__overlay")[0];
     name_tag = video__overlay.firstChild;
   }
   let icon = document.createElement("i");
@@ -291,7 +291,7 @@ const addNameTagIcon = (userId, iconClass) => {
 const removeNameTagIcon = (userId, iconClass) => {
   let name_tag = document.getElementsByClassName(userId)[0];
   if (userId == myDetails.id) {
-    let videooverlay = document.getElementsByClassName("videooverlay")[0];
+    let video__overlay = document.getElementsByClassName("video__overlay")[0];
     name_tag = video__overlay.firstChild;
   }
   if (typeof name_tag !== "undefined") {
