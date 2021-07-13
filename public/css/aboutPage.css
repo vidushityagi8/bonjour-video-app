@@ -64,6 +64,11 @@ a:hover {
   padding: 50px 0 16px;
 }
 
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
 .intro {
   width: 30%;
   margin: auto;
@@ -76,26 +81,27 @@ a:hover {
   text-align: left;
 }
 
-.contact-message {
-  width: 40%;
-  margin: 40px auto 60px;
-}
-
-.code-img {
+.microsoft-img {
   width: 20%;
   float: left;
   margin-right: 30px;
 }
 
-.pizza-img {
-  width: 20%;
+.coding-img {
+  width: 24%;
   float: right;
   margin-left: 30px;
+}
+
+.github-img {
+  width: 7%;
+  align-items: center;
 }
 
 .dp {
   height: 200px;
   width: 200px;
+  margin-bottom: 20px;
 }
 
 .bottom-cloud {
@@ -107,12 +113,6 @@ a:hover {
   position: absolute;
   right: 300px;
   top: 40px;
-}
-
-.copyright {
-  color: #eaf6f6;
-  font-size: 0.75rem;
-  padding: 20px 0;
 }
 
 .btn {
@@ -136,4 +136,16 @@ a:hover {
 .btn:active {
   position: relative;
   top: 1px;
+}
+
+.github-btn {
+  background-color: #000;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  padding: 11px 23px;
+  text-decoration: none;
 }
