@@ -57,9 +57,9 @@ This project is the solution to the challenge posed by Microsoft India Team as a
 - `server.js` - This file defines our express server.
 - `public/` - This folder contains all the static files.
 
-  - `css/` - Contains all the css files. -`callPage/`
+  - `css/` - Contains all the css files.
 
-    - Contains all css files related to the callPage
+    -`callPage/` - Contains all css files related to the callPage
 
   - `images/` - Contains all the images used in the website.
 
@@ -111,7 +111,7 @@ First, you need to download and install node.js and npm.
 ## Demo
 
 - Home page. After entering username, user can either create a room or join an existing one.
-  ![home-page](public/images/JoinRoom.PNG)
+  ![home-page](public/images/JoinRoom.png)
 
 - Mutiple people can be connected in a unique room.
   ![three-participants](public/assets/three.png)
