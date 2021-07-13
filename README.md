@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/geetikajhanji11/engage-ms-teams-clone">
+  <a href="https://github.com/vidushityagi8/bonjour-video-app">
     <i class="bjr-logo"></i>
   </a>
 
@@ -13,7 +13,7 @@
     Remote Connection with your team
     <br />
     <br />
-    <a href="...........">Go To Website</a>
+    <a href="https://whispering-castle-61100.herokuapp.com/">Go To Website</a>
   </p>
 </p>
 
@@ -21,9 +21,9 @@
 
 ## About The Project
 
-This project is a solution to the challenge posed by the Microsoft Engage 2021 Engagement & Mentorship Program for engineering students. The challenge was to build a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation.
+This project is the solution to the challenge posed by Microsoft India Team as a part of the Engagement & Mentorship Program – Engage 2021 for engineering students. The challenge statement was , "Your solution should be a fully functional prototype with at least one mandatory functionality - a minimum of two participants should be able connect with each other using your product to have a video conversation."
 
-### Built With
+### Tech Stack Used
 
 - Express
 - Bootstrap
@@ -31,7 +31,7 @@ This project is a solution to the challenge posed by the Microsoft Engage 2021 E
 - SocketIO
 - Peerjs
 
-### Features:
+### Features incorpertated:
 
 - Unique Room Creations
 - Mutiple Participant Connectivity
@@ -46,20 +46,28 @@ This project is a solution to the challenge posed by the Microsoft Engage 2021 E
 
 ### Dependencies
 
+- [ejs](https://ejs.co/) - For creating the website's frontend.
+- [uuid](https://www.npmjs.com/package/uuid?activeTab=readme) - For generating random unique roomID's
 - [express](https://github.com/expressjs/express) - The server for handling and routing HTTP requests.
 - [peer](https://peerjs.com/) - The PeerServer for establishing connections between PeerJS clients.
 - [socket.io](https://socket.io/docs/v4/index.html) - For enabling real-time bidirectional event-based communication among the peers.
-- [ejs](https://ejs.co/) - For creating the website's frontend.
-- [uuid](https://www.npmjs.com/package/uuid?activeTab=readme) - For generating random unique roomID's
 
 ### Application Structure
 
 - `server.js` - This file defines our express server.
 - `public/` - This folder contains all the static files.
-  - `assets/` - Contains all the images used in the website.
-  - `css/` - Contains all the css files.
+
+  - `css/` - Contains all the css files. -`callPage/`
+
+    - Contains all css files related to the callPage
+
+  - `images/` - Contains all the images used in the website.
+
   - `js/` - Contains all the javascript files for the project.
+
 - `views/` - This folder contains all the ejs files that need to be rendered.
+
+  -`partials/` - Contains Header and Footer
 
 <!-- GETTING STARTED -->
 
@@ -71,6 +79,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
+x
 First, you need to download and install node.js and npm.
 
 - Download Node.js using this link.
@@ -82,7 +91,7 @@ First, you need to download and install node.js and npm.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/geetikajhanji11/engage-ms-teams-clone.git
+   git clone https://github.com/vidushityagi8/bonjour-video-app
    ```
 2. Install NPM packages
    ```sh
@@ -99,28 +108,25 @@ First, you need to download and install node.js and npm.
 
 <!-- USAGE EXAMPLES -->
 
-## Walkthrough
+## Demo
 
-- Home page. User enters their first name and last name.
-  ![home-page](public/assets/home.PNG)
+- Home page. After entering username, user can either create a room or join an existing one.
+  ![home-page](public/images/JoinRoom.PNG)
 
-- Two people connected in a unique room.
-  ![two-participants](public/assets/two.png)
-
-- Three (or more) people can be connected in a unique room.
+- Mutiple people can be connected in a unique room.
   ![three-participants](public/assets/three.png)
 
-- List of all current participants on the right side.
-  ![all-participants](public/assets/participants.png)
-
-- Chatroom on the right side.
-  ![chat-feature](public/assets/chat.png)
-
-- Raise hand feature.
+- Raise hand feature inspired by Microsoft Teams.
   ![raise-hand-feature](public/assets/raise.png)
 
-- Page rendered after user pressed Leave Meeting button.
-  ![end-page](public/assets/end.png)
+- List of all current participants using toggle.
+  ![all-participants](public/assets/participants.png)
+
+- Chatroom using toggle.
+  ![chat-feature](public/assets/chat.png)
+
+- On clicking leave button.
+  ![end-page](public/images/leftMeet.png)
 
 <!-- CONTACT -->
 
@@ -128,4 +134,4 @@ First, you need to download and install node.js and npm.
 
 Email - vidushityagi8@gmail.com
 
-Project Link: [https://github.com/geetikajhanji11/engage-ms-teams-clone](https://github.com/geetikajhanji11/engage-ms-teams-clone)
+Project Link: [https://github.com/vidushityagi8/bonjour-video-app](https://github.com/vidushityagi8/bonjour-video-app)
