@@ -36,7 +36,7 @@ navigator.mediaDevices
     // console.log("my video stream")
     // console.log(myVideoStream)
 
-    // addVideoStream(myVideo, stream, myDetails.id);
+    addVideoStream(myVideo, myVideoStream, myDetails.id);
     // addNameTag(myDetails.id);
 
     socket.on("user-connected", (userId) => {
@@ -81,7 +81,6 @@ peer.on("open", (id) => {
   myDetails.userName = userName;
   // participants.push(myDetails)
   addParticipant(myDetails, true);
-  addVideoStream(myVideo, myVideoStream, myDetails.id);
   console.log(`My userId: ${id}`);
   console.log(myDetails);
   socket.emit("join-room", ROOM_ID, id);
