@@ -1,5 +1,3 @@
-// import { addParticipant } from "./participants.js";
-
 const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 const peer = new Peer(undefined, {
@@ -152,6 +150,8 @@ peer.on("connection", (conn) => {
 });
 
 function addVideoStream(video, stream, id) {
+  // console.log("stream");
+  // console.log(stream);
   console.log(`adding: ${id} STREAM`);
   console.log("displaying all participants");
   console.log(participants);
@@ -518,48 +518,6 @@ const changeSections = (sectionOne, sectionTwo, isShowingTwo) => {
     video_section.classList.remove("col-9");
     video_section.classList.add("col-12");
     sectionTwo.style.display = "none";
-  }
-};
-
-// ----------------- SCREEN SHARE -------------------
-
-let displayMediaOptions = {
-  video: true,
-  audio: true,
-};
-let isSharing = false;
-
-const screenShare = () => {
-  if (isSharing) {
-    stopScreenShare();
-  } else {
-    startScreenShare();
-  }
-};
-
-const startScreenShare = async () => {
-  myScreenShareStream = await navigator.mediaDevices.getDisplayMedia(
-    displayMediaOptions
-  );
-  myScreenShareVideo = document.createElement("video");
-  addVideoStream(myScreenShareVideo, myScreenShareStream);
-  console.log("--- comparing myVideoStream and myScreenShareStream ----");
-  console.log(myVideoStream);
-  console.log(myScreenShareStream);
-  participants.forEach((participant) =>
-    peer.call(participant.id, myScreenShareStream)
-  );
-  isSharing = true;
-};
-
-const stopScreenShare = async () => {
-  try {
-    parent_div = myScreenShareVideo.parentElement;
-    parent_div.remove();
-
-    isSharing = false;
-  } catch (error) {
-    console.log(error);
   }
 };
 
