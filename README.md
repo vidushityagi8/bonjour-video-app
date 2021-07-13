@@ -113,17 +113,20 @@ First, you need to download and install node.js and npm.
 - Home page. After entering username, user can either create a room or join an existing one.
   ![home-page](public/images/JoinRoom.png)
 
-- Mutiple people can be connected in a unique room.
-  ![three-participants](public/assets/three.png)
+- Two people can be connected in a unique room.
+  ![two-participants](public/images/2_participants.png)
 
-- Raise hand feature inspired by Microsoft Teams.
-  ![raise-hand-feature](public/assets/raise.png)
+- Mutiple people can be connected in a unique room.
+  ![three-participants](public/images/3_people.png)
+
+<!-- - Raise hand feature inspired by Microsoft Teams.
+  ![raise-hand-feature](public/assets/raise.png) -->
 
 - List of all current participants using toggle.
-  ![all-participants](public/assets/participants.png)
+  ![all-participants](public/images/3_participants.png)
 
 - Chatroom using toggle.
-  ![chat-feature](public/assets/chat.png)
+  ![chat-feature](public/images/chat.png)
 
 - On clicking leave button.
   ![end-page](public/images/leftMeet.png)
